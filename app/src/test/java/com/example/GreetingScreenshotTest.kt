@@ -17,19 +17,9 @@ import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
 import org.robolectric.annotation.GraphicsMode
 
-/**
- * Smoke-test screenshot that renders the app theme with a simple label.
- *
- * Note: this originally called a `Greeting(name: String)` composable from the
- * default Android Studio "Empty Activity" template. That composable was never
- * part of the Qusin Flashcard UI and does not exist in this codebase, which is
- * what broke `compileDebugUnitTestKotlin` (unresolved reference). Rather than
- * delete the test, it now renders a real, resolvable composable so the
- * MyApplicationTheme + Roborazzi screenshot pipeline is still exercised.
- */
 @RunWith(RobolectricTestRunner::class)
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
-@Config(qualifiers = RobolectricDeviceQualifiers.Pixel8, sdk = [36])
+@Config(qualifiers = RobolectricDeviceQualifiers.Pixel8, sdk = [35])
 class GreetingScreenshotTest {
 
   @get:Rule val composeTestRule = createComposeRule()
