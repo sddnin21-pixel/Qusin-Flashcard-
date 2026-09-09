@@ -1,0 +1,6 @@
+{
+  "name": "Qusin Flashcard",
+  "description": "Comprehensive local-first spaced repetition flashcard app with Gemini AI features.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
